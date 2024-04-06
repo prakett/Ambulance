@@ -1,0 +1,189 @@
+
+.logo{
+    color: #070a4f;
+    font-weight: bold;
+    vertical-align: middle;
+    font-size: 40px;
+    padding: 0;
+    margin: 0 0 0 -20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.logoheart{
+    height: 80px;
+    vertical-align: middle;
+    margin-top: -4px;
+    display: inline-block;
+}
+.abbbt{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -30px 0 0;
+    vertical-align: middle;
+    margin-left: 150px;
+}
+.about{
+    color: black;
+    border:none;
+    width: 90px;
+    font-size: 19px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: -5px;
+
+}
+.services{
+    color: black;
+    border:none;
+    width: 90px;
+    font-size: 19px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: -5px;
+
+}
+.about:hover{
+    opacity: 0.8;
+    color: goldenrod;
+}
+.about:active{
+
+}
+
+.services:hover{
+    opacity: 0.8;
+    color: goldenrod;
+}
+.services:active{
+
+}
+.credentials{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.loginbutton{
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: groove;
+    
+    margin-bottom: 3px;
+    cursor: pointer;
+    size: 20px;
+
+}
+.registerbutton{
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: groove;
+    border-color: black;
+    
+    margin-bottom: 4px;
+    cursor: pointer;
+
+
+}
+.loginbutton:hover{
+    color: goldenrod;
+    border-color: crimson;
+    opacity: 0.8;
+}
+
+.registerbutton:hover{
+    color: goldenrod;
+    opacity: 0.8;
+    border-color: crimson;
+}
+
+.bookingbutton{
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: groove;
+    border-color: black;
+    margin-bottom: 4px;
+    cursor: pointer;
+    background-color: goldenrod;
+}
+.bookingbutton:hover{
+    color: brown;
+    opacity: 0.8;
+    border-color: crimson
+}
+.assistancecall{
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: groove;
+    border-color: black;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+.assistancecall:hover{
+    color: goldenrod;
+    opacity: 0.8;
+    border-color: crimson
+}
+
+.middlepara{
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+    flex: content;
+    width: 820px;
+
+
+}
+.para1{
+    font-family: "Adobe Heiti Std R", serif;
+    color: saddlebrown;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+.para2{
+    color: darkred;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.para3{
+    color: darkred;
+    font-size: 25px;
+    font-style: italic;
+}
+.para4{
+    font-family: "Arial Rounded MT Bold";
+    font-size: 20px;
+}
+.para5{
+    font-size: 18px;
+    width: 630px;
+    color: brown;
+    text-align: center;
+    margin-left: 90px;
+}
+.gifambulance{
+    position:absolute;
+    width: 780px;
+    margin-top: 105px;
+    margin-right: 10px;
+    top: 0px;
+    right: 0px;
+    border-color: mediumpurple;
+    border-radius: 9px;
+    background-image: url("Ambulance gif.gif");
+    background-attachment: fixed;
+}
+*{
+    background-color: cornsilk;
+}
+.callimage{
+    width: 25px;
+
+}

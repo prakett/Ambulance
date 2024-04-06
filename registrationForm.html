@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registrationform.css">
+
+</head>
+<body>
+<div class="center">
+    <h1>Register</h1>
+    <form id = "myform">
+        <div class="txt_field">
+            <label>
+                <input type="text" required>
+            </label>
+            <span>
+
+            </span>
+            <label>
+                Username
+            </label>
+
+        </div>
+
+        <div class="txt_field">
+            <label>
+                <input type="password" required>
+            </label>
+            <span>
+
+            </span>
+            <label>Password</label>
+        </div>
+        <input value="Register" type="button" onclick="" >
+
+    </form>
+</div>
+<script>
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = {
+            name: document.getElementById("").value,
+            password: document.getElementById('password').value,
+        };
+
+        fetch('http://localhost:5000/postData/',
+            {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Response from server:', data);
+                // Handle the response as needed
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
+
+</script>
+</body>
+</html>
