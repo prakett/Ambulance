@@ -29,5 +29,22 @@ def ambulance():
     except Exception as e:
         return jsonify({'error': str(e)})
 
+@app.route('/users', methods=['GET'])
+def get_users():
+    try:
+        connection = connect_mysql()
+        cursor = connection.cursor(dictionary=True)
+
+        cursor.execute('SELECT * FROM users')
+        users = cursor.fetchall()
+
+        cursor.close()
+        connection.close()
+
+        return jsonify(users)
+
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
 if __name__ == '__main__':
     app.run(debug=True)
